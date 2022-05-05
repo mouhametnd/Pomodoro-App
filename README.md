@@ -6,6 +6,7 @@ This was a cool project challenged by frontend mentor. The project is built with
 
 ## Links
 - My Linkedin [Linkedin](https://www.linkedin.com/in/mouhametndiaye/)
+- My email ahmetndiaye403@gmail.com
 - Live Project [Pomodoro App](https://mouhametnd-pomodoro.netlify.app/)
 - Challenged by [Frontend Mentor](https://www.frontendmentor.io/home)
 
@@ -26,7 +27,7 @@ Your users should be able to:
 - Mobile-first workflow
 - Semantic HTML5 markup
 - SASS
-- Vanilla JavaScript and Gulp.js
+- Vanilla JavaScript, localStorage and Gulp.js
 
 ## What I learned
 
