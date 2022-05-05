@@ -1,15 +1,43 @@
-Frontend Mentor: Pomodoro Timer Challenge
+# Frontend Mentor: Pomodoro Timer Challenge
+ 
+## Welcome 🍃
 
-Ability to Start 3 types of timers
-Ability to change visual of the app
-Ability to pause, start and restart the timer
-Ability to customize each of the timers
+This was a cool project challenged by frontend mentor. The project is built with `HTML`, `CSS`, `Javascript` and `Gulp.js`. This was a good project to put into practice my `CSS` and `Javascript` skills.
 
-SVG Progress Bar
-One of the challenging parts of this project is big button with radial progress bar and text on top of it. I thought that with CSS building it might be tricky and we as developers have a great SVG technology.
+## Links
+- My Linkedin [Linkedin](https://www.linkedin.com/in/mouhametndiaye/)
+- Live Project [Pomodoro App](https://mouhametnd-pomodoro.netlify.app/)
+- Challenged by [Frontend Mentor](https://www.frontendmentor.io/home)
 
-The idea of a Pomodoro technique is that during the day you can block chunks of time of 25 minutes and try to focus on doing one thing, without any destructions.
+## Challenge  
 
-In the FrontendMentor's design the idea is evolved to have 3 shortcut values to set common time-chunks of 25, 5 and 15 minutes. Futhermore these values can then be changed in the application settings.
+Your users should be able to:
+- Start 3 types of timers
+- pause, start and restart the timer
+- Set a pomodoro timer and short & long break timers
+- Customize how long each timer runs for. See a circular progress bar that updates every minute and represents how far through their timer they are.
+- change visual of the app. Customize the appearance of the app with the ability to set preferences for colors and fonts
 
-Original design providing the circled progress-bar that runs clockwise and time increments accordingly, however this part I changed to my liking - progress bar and time actually reducing values, rather than increasing them. So instead of going from 00:00 to 25:00, this implementation goes from 25:00 to 00:00 in the end.
+## Design of the App
+![Design preview for the Pomodoro App page coding challenge](./pomodoro-app.gif)
+
+## Built with
+
+- Mobile-first workflow
+- Semantic HTML5 markup
+- SASS
+- Vanilla JavaScript and Gulp.js
+
+## What I learned
+
+- SVG animated path
+- JavaScript modules
+- Changing CSS custom properties with JS
+
+## How To Run The Project
+
+1. First of all you would need a Node installed.
+2. Then you would need to install project dependencies from the package.json file, by running the npm install command. This.
+
+
+
