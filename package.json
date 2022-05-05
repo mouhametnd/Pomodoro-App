@@ -1,0 +1,25 @@
+{
+  "name": "pomodoro",
+  "version": "1.0.0",
+  "description": "tiene que tener tres contadores, una para el trabajo, segundo para el mini descanso y tercero para el largo de descanso.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/register": "^7.17.7",
+    "autoprefixer": "^10.4.5",
+    "cssnano": "^5.1.7",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-postcss": "^9.0.1"
+  }
+}

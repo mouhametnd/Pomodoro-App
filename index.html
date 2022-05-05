@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/972c594dde.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles-min.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="container-top">
+        <span class="span-error ">You didn't add a time to countdown or the time to countdown has been finished </span>
+        <h1 class="h1">Pomodoro</h1>
+        <ul class="ul" id="ul">
+          <li class="ul-li active" id="work-btn" data-clock="work">
+            <span class="ul-span">Work</span>
+          </li>
+          <li class="ul-li" id="short-break-btn" data-clock="short-break">
+            <span class="ul-span">Short Break</span>
+          </li>
+          <li class="ul-li" id="long-break-btn" data-clock="long-break">
+            <span class="ul-span">Long Break</span>
+          </li>
+        </ul>
+        <span class="ul-span-set" id="set-btn">Settings</span>
+      </div>
+      <div class="container_clock">
+        <div class="clock">
+          <svg class="clock__svg" viewBox="00 00 500 500">
+            <circle class="clock__svg-circle clock__svg-circle--paused clock__svg-circle--active" cx="232" cy="232" r="232" id="circle--work" data-state="paused"></circle>
+            <circle class="clock__svg-circle clock__svg-circle--paused" cx="232" cy="232" r="232" id="circle--short-break" data-state="paused"></circle>
+            <circle class="clock__svg-circle clock__svg-circle--paused" cx="232" cy="232" r="232" id="circle--long-break" data-state="paused"></circle>
+          </svg>
+          <div class="clock__main">
+            <span class="clock__time" id="clock__time" >00:00</span>
+            <span class="clock__btn" id="clock__btn" data-action="start">start</span>
+          </div>
+        </div>
+      </div>
+      <div class="container-btns" id="container-btns">
+        <button class="container-btns__btn start container-btns__btn--disabled  " id="start-btn" data-action="start">Start</button>
+        <button class="container-btns__btn pause container-btns__btn--disabled" id="pause-btn" data-action="pause">Pause</button>
+        <button class="container-btns__btn cancel container-btns__btn--disabled" id="cancel-btn" data-action="cancel">Cancel</button>
+      </div>
+      <div class="modal" id="modal">
+        <div class="modal__main">
+          <div class="modal__container-top">
+            <span class="modal__span ">settings</span>
+            <i class="modal__close-icon fa-solid fa-xmark" id="close-btn"></i>
+          </div>
+          <div class="modal__set-time">
+            <span class="modal__time-span">Time (minutes)</span>
+            <div class="modal__container-inputs" id="modal__container-inputs">
+              <span class="modal__span-error" id="modal__span-error span-error--show">Some field is invalid or is excuting now a countdown. the maximum minutes is 60 and the minimum 0</span>
+              <div class="modal__container-input">
+                <label for="work" class="modal__label">Work</label>
+                <input max="600" required type="number" class="modal__input" id="work-input" data-id="work" />
+              </div>
+              <div class="modal__container-input">
+                <label for="short-break" class="modal__label">Short Break</label>
+                <input max="600" required type="number" id="short-break-input" class="modal__input" data-id="short-break" />
+              </div>
+              <div class="modal__container-input">
+                <label for="long-break" class="modal__label">Long Break</label>
+                <input max="600" required type="number" id="long-break-input" class="modal__input" data-id="long-break" />
+              </div>
+            </div>
+          </div>
+          <div class="modal__container-prefers modal__container-prefers--1">
+            <span class="modal__prefer-name">Font</span>
+            <div class="modal__container-prefers-items modal__container-prefers-items--1">
+              <span class="modal__font modal__font1 modal__font--active" id="modal__font1" data-font="'Space Mono', monospace">Aa</span>
+              <span class="modal__font modal__font2" id="modal__font2" data-font="'Poppins', sans-serif">Aa</span>
+              <span class="modal__font modal__font3" id="modal__font3" data-font="'Roboto', sans-serif">Aa</span>
+            </div>
+          </div>
+          <div class="modal__container-prefers modal__container-prefers--2">
+            <span class="modal__prefer-name">color</span>
+            <div class="modal__container-prefers-items">
+              <div class="modal__clr modal__clr1 modal__clr--active" id="modal__clr1" data-color="#f87070"></div>
+              <div class="modal__clr modal__clr2" id="modal__clr2" data-color="#5f9ea0"></div>
+              <div class="modal__clr modal__clr3" id="modal__clr3" data-color="#d881f8"></div>
+            </div>
+          </div>
+          <button class="modal__btn-apply" id="modal__btn-apply">Apply</button>
+        </div>
+      </div>
+    </section>
+    <script src="./src/js/app.js" type="module"></script>
+  </body>
+</html>
+

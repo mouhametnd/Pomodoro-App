@@ -1,0 +1,17 @@
+:root {
+  --primary-font: 'Kumbh Sans', sans-serif;
+}
+$font-weight: (
+  300: 300,
+  400: 400,
+  500: 500,
+  600: 600,
+  700: 700,
+  800: 800,
+  900: 900,
+);
+
+@function get-weight($weight) {
+  $weight: map-get($font-weight, $weight);
+  @return $weight;
+}

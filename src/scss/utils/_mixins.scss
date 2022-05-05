@@ -1,0 +1,40 @@
+// breakpoints
+$breakpoints: (
+  xs: 548px,
+  md: 768px,
+  xl: 1100px,
+  xxl: 1200px,
+);
+
+@mixin breakpoint($val) {
+  $val: map-get($breakpoints, $val);
+  @media screen and (min-width: $val) {
+    & {
+      @content;
+    }
+  }
+}
+
+// grid
+@mixin grid($col, $size, $gap: 0px) {
+  display: grid;
+  grid-template-columns: repeat($col, $size);
+  gap: $gap;
+}
+
+//flex
+@mixin flex($mx, $cx, $flow...) {
+  display: flex;
+  justify-content: $mx;
+  align-content: $cx;
+  flex-flow: $flow;
+}
+
+// on hover
+@mixin hover {
+  @media screen and (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
