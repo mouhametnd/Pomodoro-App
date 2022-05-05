@@ -2,7 +2,7 @@
  
 ## Welcome 🍃
 
-This was a cool project challenged by frontend mentor. The project is built with `HTML`, `CSS`, `Javascript` and `Gulp.js`. This was a good project to put into practice my `CSS` and `Javascript` skills.
+This was a cool project challenged by frontend mentor Also was a good project to put into practice my `CSS` and `Javascript` skills.
 
 ## Links
 - My Linkedin [Linkedin](https://www.linkedin.com/in/mouhametndiaye/)
