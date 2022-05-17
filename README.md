@@ -2,7 +2,7 @@
  
 ## Welcome 🍃
 
-This was a cool project challenged by frontend mentor Also was a good project to put into practice my `CSS` and `Javascript` skills.
+This was an excellent project challenged by frontend mentor Also was a good project to put into practice my `CSS` and `Javascript` skills.
 
 ## Links
 - My Linkedin [Linkedin](https://www.linkedin.com/in/mouhametndiaye/)
